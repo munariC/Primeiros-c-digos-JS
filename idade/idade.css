@@ -1,0 +1,18 @@
+body{
+    background: rgb(194, 244, 255);
+    text-align: center;
+}
+#res{   
+   font: 14pt ;
+    text-align: center;
+}
+#year{
+   background: white; 
+   font: normal 16pt Arial;
+ 
+}
+section{
+    background: rgb(125, 200, 247);
+    width: auto;
+}
+ 

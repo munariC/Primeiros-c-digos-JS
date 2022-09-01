@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+    <style>
+        body{
+            text-align: center;
+            font: 18pt Arial;
+            color:black;
+            background: rgb(189, 189, 187);
+        }
+        input#txtpai{
+            width: 300px;
+            height: 30px;
+            background: rgb(110, 138, 110);
+    
+        }
+        input#bu{
+            background: green;
+            height: 30px;
+            color: black;
+        }
+        img#ae{
+            height: 214px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+<div id="roupa">
+    <h1>Sistema de Nacionalidade</h1>
+
+ <div><input type="text" placeholder="Digite seu país" id="txtpai"></div>
+ <div><input type="button" value="Verificar" onclick="verificar()" id="bu"></div>
+ <img src="../Javascript/Aulas/aula1/IMG/618ec08acec8b12b4cd4c847_o_U_v2.jpg" alt="" id="ae"> 
+ <div id = "res">
+
+    </div>
+</div>
+ <script>
+     function verificar(){
+     var país = document.querySelector('input#txtpai')
+     var res = document.querySelector('div#res')
+     var nac = String(país.value)
+
+
+         if( nac == 'Brasil' || nac == 'brasil'){
+           res.innerHTML = `<p>Você é Brasileiro!<p>`
+        } else {
+            res.innerHTML = `<p>Você é estrangeiro!<p>`
+        }
+    } 
+                
+    </script>
+
+    
+</body>
+</html>
